@@ -1,0 +1,9 @@
+sooo pretty much the code from Crime incidents refers to census_tract is connected to name of population variables but requires transformation as the census_tract for crime incidents is 000902 and refers to Census Tract 9.02.
+
+For Census Tract 1 it is 000100
+
+For Census Tract 14.01 it is 001401
+
+
+
+Use python for Census Tract 14.01 remove non numerical values then add leading zeroes to add up to 6 digits.
