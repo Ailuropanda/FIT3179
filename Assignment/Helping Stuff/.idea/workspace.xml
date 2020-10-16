@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0436b20d-2f0e-435d-8bd4-f65f9bfb9056" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Helping Stuff/CENSUS DC.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../visualization.vl.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,16 +110,15 @@
       <option name="presentableId" value="Default" />
       <updated>1602733369708</updated>
       <workItem from="1602733372258" duration="806000" />
-      <workItem from="1602741229872" duration="3199000" />
+      <workItem from="1602741229872" duration="3379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4005000" />
+    <option name="totallyTimeSpent" value="4185000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2552" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25198728" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
