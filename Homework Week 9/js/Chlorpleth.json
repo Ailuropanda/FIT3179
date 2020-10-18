@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Crimes Committed in DC 2018",
+  "width": 800,
+  "height": 600,
+  "data": {
+    "url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/Data/Cleaned/Crime_Incidents_in_2018.csv"
+  },
+  "transform": [
+   
+    {
+     
+      "lookup": "CENSUSKEY",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/Data/Population%20Variable/Shape%20File/ACS_2018_Population_Variables_Tract-shp/1a06e536-b186-4e78-bab7-63836dce84f82020328-1-r1rbgx.oico.json",
+          "format": {
+      "type": "topojson",
+      "feature": "1a06e536-b186-4e78-bab7-63836dce84f82020328-1-r1rbgx"
+    }
+        },
+        "key": "properties.NAME"
+
+
+      },
+       "as": "geo"
+
+
+    },
+     { "filter": "isValid(datum.geo)"}
+  ],
+  "projection": {"type": "albersUsa"},
+  "mark": "geoshape",
+  "encoding": {
+     "shape":{
+      "field": "geo",
+      "type":"geojson"
+    },
+    "color":{
+      "aggregate": "count"
+
+    },
+    "tooltip": [
+      {
+        "field": "CENSUSKEY",
+        "type": "nominal",
+        "title": "Census Key"
+      },
+      {
+        "field": "WARD",
+        "type": "nominal"
+      },
+      {
+        "aggregate" :"count",
+        "title" : "Crimes Committed"
+      }
+    ]
+  }
+}
