@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Crimes Committed in DC 2018",
+  "width": 800,
+  "height": 600,
+  "data": {
+    "url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/Data/Cleaned/Crime_Incidents_in_2018.csv"
+  },"params": [
+ {
+ "name": "Crime_Selection",
+ "bind": {
+ "input": "select",
+ "options": [
+ null,
+ "ARSON",
+ "ASSAULT W/DANGEROUS WEAPON",
+ "BURGLARY",
+ "HOMICIDE",
+ "MOTOR VEHICLE THEFT",
+ "ROBBERY",
+ "SEX ABUSE",
+ "THEFT F/AUTO",
+ "THEFT/OTHER"
+ ],
+ "labels":[
+ "SHOW ALL",
+ "ARSON",
+ "ASSAULT W/DANGEROUS WEAPON",
+ "BURGLARY",
+ "HOMICIDE",
+ "MOTOR VEHICLE THEFT",
+ "ROBBERY",
+ "SEX ABUSE",
+ "THEFT F/AUTO",
+ "THEFT/OTHER"
+ ],
+ "name": "Crime Selection:  "
+ }
+ }
+ ],
+  "transform": [
+   
+    {
+     
+      "lookup": "CENSUSKEY",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/Data/Population%20Variable/Shape%20File/ACS_2018_Population_Variables_Tract-shp/1a06e536-b186-4e78-bab7-63836dce84f82020328-1-r1rbgx.oico.json",
+          "format": {
+      "type": "topojson",
+      "feature": "1a06e536-b186-4e78-bab7-63836dce84f82020328-1-r1rbgx"
+    }
+        },
+        "key": "properties.NAME"
+
+
+      },
+       "as": "geo"
+
+
+    },
+    {"filter": "Crime_Selection == null || datum.OFFENSE == Crime_Selection"},
+     { "filter": "isValid(datum.geo)"}
+  ],
+  "projection": {"type": "albersUsa"},
+  "layer": [{
+  "mark": "geoshape",
+  "encoding": {
+     "shape":{
+      "field": "geo",
+      "type":"geojson"
+    },
+     "color":{
+      "aggregate": "count"
+
+    },
+       "tooltip": [
+      {
+        "field": "CENSUSKEY",
+        "type": "nominal",
+        "title": "Census Key"
+      },
+      {
+        "field": "WARD",
+        "type": "nominal"
+      },
+      {
+        "aggregate" :"count",
+        "title" : "Crimes Committed"
+      }
+    ]
+    
+    }
+    
+    
+    
+    },
+    {
+      "mark": "text",
+        "encoding": {
+      "text": {"field": "METHOD", "type": "nominal"},
+      "longitude": {"field": "LONGITUDE", "type": "quantitative"},
+      "latitude": {"field": "LATITUDE", "type": "quantitative"},
+      "size": {"value": 10},
+      "opacity": {
+        "condition":{
+          "test": "datum['OFFENSE'] == 'HOMICIDE'", "value":1},
+          "value":0
+      }}
+    
+
+
+
+
+    }]
+
+   
+    
+    
+
+ 
+  }
