@@ -1,5 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+"title": "Break up of crimes committed",
   "width": 650,
   "height": 450,
   "data": {

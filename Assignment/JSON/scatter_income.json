@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
+"title": "Crimes Committed vs Median Income",
   "width": 650,
   "height": 450,
   "data": {"url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/Data/Cleaned/Crime_Incidents_in_2018.csv"},
