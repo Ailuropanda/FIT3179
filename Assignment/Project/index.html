@@ -18,25 +18,26 @@
 <div class = "offset-1 col-10" id = "wholePage">
 <div class = "container-fluid">
 <div class = "row">
-<div class  = "col-3">
-<h2> Crimes committed in Washington DC </h2>
-<p> This will be filled with information.... eventually </p>
-</div>
-<div class = "col-9 d-flex justify-content-center">
+<div class = "col-6 d-flex justify-content-center">
 <div id="vis"></div>
+</div>
+
+<div class = "col-6 d-flex justify-content-center">
+<div id="piechart"></div>
 </div>
 
 </div>
 <div class = "row">
-<div class = "col-9 d-flex justify-content-center">
-<div id = "secondVis">
-</div>
-</div>
 <div class = "col-3">
 <h2> Crimes committed in Washington DC Chloropleth </h2>
 <p> This will be filled with information.... eventually </p>
 
 </div>
+<div class = "col-9 d-flex justify-content-center">
+<div id = "secondVis">
+</div>
+</div>
+
 
 </div>
 
@@ -74,6 +75,10 @@
   }).catch(console.error);
    var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/scatter_income.json";
   vegaEmbed('#scatter2', spec).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+     var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/Piechart of Offenses 2018";
+  vegaEmbed('#piechart', spec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
