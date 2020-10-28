@@ -39,12 +39,18 @@
 </div>
 
 </div>
+<div class = "row">
+<div class = "col-6">
+
+</div>
+<div class = "col-6">
+</div>
 </div>
 </div>
 
 </div>
 
-
+C:\Users\Rohan\Desktop\FIT3179 ASM 2\FIT3179\Assignment\JSON
 
 <script type="text/javascript">
   var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Homework%20Week%2010/js/testing.json";
@@ -55,6 +61,15 @@
   vegaEmbed('#secondVis', spec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+   var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/scatter_poverty.json"";
+  vegaEmbed('#scatter1', spec).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+   var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/scatter_income.json";
+  vegaEmbed('#scatter2', spec).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
 </script>
 </body>
 </html>

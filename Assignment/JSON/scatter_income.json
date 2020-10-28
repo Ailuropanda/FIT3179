@@ -1,0 +1,18 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
+  "data": {"url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/Data/Cleaned/Crime_Incidents_in_2018.csv"},
+  "transform": [{
+    "lookup":"CENSUSKEY",
+    "from":{
+      "data":{"url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/Data/Median%20Income/ACS_2018_Median_Household_Income_Variables_Tract.csv"},
+      "key": "NAME",
+      "fields": ["B19049_001E","NAME"]
+    }
+  }],
+  "mark": "point",
+  "encoding": {
+    "y": {"field": "CENSUSKEY", "type": "quantitative","aggregate":"count","title":"Crimes Committed"},
+    "x": {"field": "B19049_001E", "type": "quantitative","title":"Median Income"}
+  }
+}
