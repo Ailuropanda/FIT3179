@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 "title": "Population in poverty",  
 "width": 400,
-  "height": 350,
+  "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/Data/Poverty%20Variable/ACS_2018_Poverty_Status_Variables_Tract-shp/78ff4a24-6d16-4d59-969c-b5e9f72342092020329-1-hfthzv.ozl25.json",
     "format": {
