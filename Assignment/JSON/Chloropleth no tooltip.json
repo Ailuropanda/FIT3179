@@ -94,24 +94,6 @@
     
     
     
-    },
-    {
-      "mark": "text",
-        "encoding": {
-      "text": {"field": "METHOD", "type": "nominal"},
-      "longitude": {"field": "LONGITUDE", "type": "quantitative"},
-      "latitude": {"field": "LATITUDE", "type": "quantitative"},
-      "size": {"value": 10},
-      "opacity": {
-        "condition":{
-          "test": "datum['OFFENSE'] == 'HOMICIDE'", "value":1},
-          "value":0
-      }}
-    
-
-
-
-
     }]
 
    
