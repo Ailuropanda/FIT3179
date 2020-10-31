@@ -13,7 +13,7 @@
       "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
     },{
       "data": {
-        "url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Homework%20Week%209/data/Crime_Incidents_in_2020%20(1).csv"
+        "url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/Data/Crime_Incidents/Crime_Incidents_in_2020.csv"
       },
       "encoding": {
         "longitude": {"field": "LONGITUDE", "type": "quantitative"},
