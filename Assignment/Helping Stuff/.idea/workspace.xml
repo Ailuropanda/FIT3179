@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0436b20d-2f0e-435d-8bd4-f65f9bfb9056" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../JSON/Chloropleth of Median Income.Json" beforeDir="false" afterPath="$PROJECT_DIR$/../JSON/Chloropleth of Median Income.Json" afterDir="false" />
-    </list>
+    <list default="true" id="0436b20d-2f0e-435d-8bd4-f65f9bfb9056" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,12 +135,12 @@
       <workItem from="1602988842742" duration="2881000" />
       <workItem from="1604044586451" duration="3739000" />
       <workItem from="1604118552518" duration="4787000" />
-      <workItem from="1604128204146" duration="1527000" />
+      <workItem from="1604128204146" duration="1740000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17119000" />
+    <option name="totallyTimeSpent" value="17332000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
