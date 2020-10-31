@@ -120,6 +120,26 @@
     </div>
   </section>
 
+   <section id="correlation" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mx-auto">
+   <div id="corr1">
+          </div>
+        </div>
+        <div class="col-lg-4 mx-auto">
+   <div id="corr2">
+          </div>
+        </div>
+        <div class="col-lg-4 mx-auto">
+   <div id="corr3">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
@@ -165,7 +185,20 @@
     vegaEmbed('#poverty_chloropleth', spec).then(function (result) {
         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
+     var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/Multi%20Scatterplots.JSON";
+    vegaEmbed('#corr1', spec).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/Piechart of Offenses 2018.json";
+    vegaEmbed('#corr2', spec).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/Chloropleth of Poverty.json";
+    vegaEmbed('#corr3', spec).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
     </script>
+
 
 </body>
 

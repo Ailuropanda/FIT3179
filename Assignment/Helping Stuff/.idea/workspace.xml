@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0436b20d-2f0e-435d-8bd4-f65f9bfb9056" name="Default Changelist" comment="" />
+    <list default="true" id="0436b20d-2f0e-435d-8bd4-f65f9bfb9056" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../JSON/Chloropleth of Median Income.Json" beforeDir="false" afterPath="$PROJECT_DIR$/../JSON/Chloropleth of Median Income.Json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
