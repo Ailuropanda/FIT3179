@@ -81,10 +81,6 @@
         "title": "Census Key"
       },
       {
-        "field": "WARD",
-        "type": "nominal"
-      },
-      {
         "aggregate" :"count",
         "title" : "Crimes Committed"
       }
