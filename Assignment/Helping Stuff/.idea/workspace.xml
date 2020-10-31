@@ -10,12 +10,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Conversion of Census Tract.ipynb">
           <provider selected="true" editor-type-id="jupyter-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/Python38/Lib/site-packages/pandas/core/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5747">
+              <caret line="666" column="8" selection-start-line="666" selection-start-column="8" selection-end-line="666" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/one to one join.ipynb">
           <provider selected="true" editor-type-id="jupyter-editor" />
         </entry>
@@ -78,7 +87,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -90,6 +98,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -125,17 +134,18 @@
       <workItem from="1602741229872" duration="3379000" />
       <workItem from="1602988842742" duration="2881000" />
       <workItem from="1604044586451" duration="3739000" />
+      <workItem from="1604118552518" duration="682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10805000" />
+    <option name="totallyTimeSpent" value="11487000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25596184" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2579491" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -163,6 +173,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/one to one join.py" />
     <entry file="file://$PROJECT_DIR$/Checking.ipynb">
       <provider selected="true" editor-type-id="jupyter-editor" />
     </entry>
@@ -180,13 +191,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/one to one join.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Conversion of Census Tract.ipynb">
+    <entry file="file://$PROJECT_DIR$/one to one join.ipynb">
       <provider selected="true" editor-type-id="jupyter-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/one to one join.ipynb">
+    <entry file="file://C:/Python38/Lib/site-packages/pandas/core/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5747">
+          <caret line="666" column="8" selection-start-line="666" selection-start-column="8" selection-end-line="666" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conversion of Census Tract.ipynb">
       <provider selected="true" editor-type-id="jupyter-editor" />
     </entry>
   </component>
