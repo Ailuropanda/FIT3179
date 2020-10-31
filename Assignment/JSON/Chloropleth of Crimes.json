@@ -1,6 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 400,
+ "title": {"text":"Crimes Committed",
+  "fontSize": 22}, 
+"width": 400,
   "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/Data/Cleaned/Crime_Incidents_in_2018_counted.csv"
