@@ -18,7 +18,7 @@
         "url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/Data/Poverty%20Variable/ACS_2018_Poverty_Status_Variables_Tract.csv"
       },
       "key": "NAME",
-      "fields": ["B17020_002E"]
+      "fields": ["B17020_002E","NAME"]
     }
   }],
   "projection": {
@@ -29,13 +29,18 @@
     "color": {
       "field": "B17020_002E",
       "type": "quantitative",
-      "title": "Number below poverty threshold"
+      "title": "Count of Poverty"
     },"tooltip": [
       {
         "field":"B17020_002E",
-        "title" : "Number below poverty threshold",
+        "title" : "Count of Poverty",
 	"type": "quantitative"
-      }
+      },
+{
+"field": "NAME",
+"type": "nominal",
+"title": "Census Location"
+}
     ]
   }
 }
