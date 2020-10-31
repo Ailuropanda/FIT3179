@@ -105,13 +105,10 @@
    <section id="scatter">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 mx-auto">
+        <div class="col-lg-10 mx-auto">
           <div id = "scatter1">
           </div>
         </div>
-          <div class="col-lg-6 mx-auto">
-          <div id = "scatter2">
-          </div>
         </div>
       </div>
     </div>
@@ -150,12 +147,8 @@
     vegaEmbed('#secondVis', spec).then(function (result) {
         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
-    var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/scatter_poverty.json";
+    var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/Multi Scatterplots.json";
     vegaEmbed('#scatter1', spec).then(function (result) {
-        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
-    var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/scatter_income.json";
-    vegaEmbed('#scatter2', spec).then(function (result) {
         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
     var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/Piechart of Offenses 2018.json";
