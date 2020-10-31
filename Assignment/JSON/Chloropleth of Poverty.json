@@ -29,11 +29,11 @@
     "color": {
       "field": "B17020_002E",
       "type": "quantitative",
-      "title": "Number of incomes below poverty threshold"
+      "title": "Number below poverty threshold"
     },"tooltip": [
       {
         "field":"B17020_002E",
-        "title" : "Number of incomes below poverty threshold",
+        "title" : "Number below poverty threshold",
 	"type": "quantitative"
       }
     ]
