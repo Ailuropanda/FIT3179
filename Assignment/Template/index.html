@@ -105,6 +105,11 @@
    <section id="scatter">
     <div class="container">
       <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Correlation of Crimes and Poverty</h2>
+          <p class="lead">As discovered by the previous visualisations there seems to be similar map patterns between poverty and the specific crime of Assault with a dangerous weapon, these scatter plots are used as further evidence to support the correlation between the two.
+          As seen by the Crimes Count and Poverty Count there is a positive correlation between the two as well as Crimes count and Unemployment having a similar positive correlation and Crimes count and median income having a negative correlation.</p>
+        </div>
         <div class="col-lg-10 mx-auto">
           <div id = "scatter1">
           </div>
@@ -147,7 +152,7 @@
     vegaEmbed('#secondVis', spec).then(function (result) {
         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
-    var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/Multi Scatterplots.json";
+    var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/Multi%20Scatterplots.JSON";
     vegaEmbed('#scatter1', spec).then(function (result) {
         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
