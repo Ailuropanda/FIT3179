@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "A simple radial chart with embedded data.",
+   "width": 650,
+  "height": 450,
+  "data": {
+    "url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/Data/Cleaned/Crime_Incidents_in_2018.csv"
+  },
+  "layer": [{
+    "mark": {"type": "arc", "innerRadius": 20, "stroke": "#fff"}
+  }],
+  "encoding": {
+    "theta": {"field": "OFFENSE", "type": "quantitative","aggregate": "count", "stack":true},
+    "radius": {"field": "OFFENSE", "type": "quantitative","aggregate": "count", "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
+    "color": {"field": "OFFENSE", "type": "nominal"},
+     "tooltip": [
+      {
+        "field": "OFFENSE",
+        "type": "quantitative",
+        "aggregate": "count",
+        "title": "Number of Crimes"
+      },
+      {
+        "field": "OFFENSE",
+        "type": "nominal",
+        "title" : "Type of offense"
+      }
+    ]
+  },
+  "view": {"stroke": null}
+}
