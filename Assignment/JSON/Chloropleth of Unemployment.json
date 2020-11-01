@@ -1,6 +1,6 @@
-PK            {
+{
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-"title": {"text":"Population Density",
+"title": {"text":"Unemployment %",
   "fontSize": 22},
 "width": 352,
   "height": 352,
