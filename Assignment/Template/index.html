@@ -73,14 +73,34 @@
 
   <section id="services" >
     <div class="container">
+      <div class = "row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Chloropleth Map to show trends across different zones of Washington DC</h2>
+          <p>A noteworthy feature of this is the similarity in chloropleth maps with Assault Crimes and Poverty stricken census tracts.</p>
+
+      </div>
       <div class="row">
         <div class="col-lg-6 mx-auto">
           <div id="secondVis">
           </div>
         </div>
         <div class="col-lg-6 mx-auto">
-          <div id="poverty_chloropleth">
+          <div id="poverty_chloropleth"  style = "display:none"></div>
+          <div id = "unemployment_chloropleth"  style = "display:none"></div>
+          <div id = "income_chloropleth"  style = "display:none"></div>
+          <div id = "population_chloropleth" style = "display:none"></div>
+
+
+          <button  type = "button" class = "btn btn-secondary" id = "PovertyButton" style = "display:none"> Poverty Map</button>
+
+          <button  type = "button" class="btn btn-secondary" id = "PopulationButton">Population Map</button>
+            <button type = "button" class = "btn btn-secondary" id = "UnemploymentButton">Unemployment Map</button>
+            <button  type = "button" class = "btn btn-secondary" id = "IncomeButton"> Income Map</button>
+
+
+
           </div>
+
         </div>
       </div>
     </div>
@@ -109,33 +129,19 @@
           <p class = "lead"> Note that there is heavy indicators of correlation between crimes and unemployment/poverty and median income.</p>
         </div>
         <div class="col-lg-10 mx-auto">
-          <div id = "scatter1">
+          <div id = "scatter1"><button  type="button" class="btn btn-secondary" data-target = "#pieModal" data-toggle="modal">Crime Breakdown</button>
+
           </div>
         </div>
+
         </div>
+      <div class = "row">
+                  <button  type="button" class="btn btn-secondary" data-target = "#corrModal" data-toggle="modal">Crime Breakdown</button>
+      </div>
       </div>
     </div>
   </section>
 
-   <section id="correlation" class="bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 mx-auto">
-   <div id="corr1">
-          </div>
-        </div>
-        <div class="col-lg-4 mx-auto">
-   <div id="corr2">
-          </div>
-        </div>
-        <div class="col-lg-4 mx-auto">
-   <div id="corr3">
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
@@ -168,7 +174,7 @@
     vegaEmbed('#vis', spec).then(function (result) {
         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
-    var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/Chlorpleth.json";
+    var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/Chloropleth of Crimes Committed (Assault).json";
     vegaEmbed('#secondVis', spec).then(function (result) {
         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
@@ -178,6 +184,18 @@
     }).catch(console.error);
     var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/Chloropleth of Poverty.json";
     vegaEmbed('#poverty_chloropleth', spec).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/Chloropleth of Income.json";
+    vegaEmbed('#income_chloropleth', spec).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/Chloropleth of Population.json";
+    vegaEmbed('#population_chloropleth', spec).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/Chloropleth of Unemployment.json";
+    vegaEmbed('#unemployment_chloropleth', spec).then(function (result) {
         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
      var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/Correlation Median_Income.json";
@@ -204,7 +222,7 @@
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Radial Chart of Crimes committed</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Crime Breakdown</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -219,6 +237,36 @@
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="corrModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">R Correlation Values</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="row">
+        <div class="col-lg-4 mx-auto">
+   <div id="corr1">
+          </div>
+        </div>
+        <div class="col-lg-4 mx-auto">
+   <div id="corr2">
+          </div>
+        </div>
+        <div class="col-lg-4 mx-auto">
+   <div id="corr3">
+          </div>
+        </div>
+          </div>
+      </div>
+          </div>
+      </div>
+    </div>
+
 
 
 </html>

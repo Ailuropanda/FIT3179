@@ -26,4 +26,56 @@
     offset: 56
   });
 
+  $("#PopulationButton").on("click",function(){
+    $("#PopulationButton").hide()
+    $("#IncomeButton").show()
+    $("#PovertyButton").show()
+    $("#UnemploymentButton").show()
+
+    $("#population_chloropleth").show()
+    $("#income_chloropleth").hide()
+    $("#poverty_chloropleth").hide()
+    $("#unemployment_chloropleth").hide()
+
+  })
+  $("#IncomeButton").on("click",function(){
+    $("#PopulationButton").show()
+    $("#IncomeButton").hide()
+    $("#PovertyButton").show()
+    $("#UnemploymentButton").show()
+
+    $("#population_chloropleth").hide()
+    $("#income_chloropleth").show()
+    $("#poverty_chloropleth").hide()
+    $("#unemployment_chloropleth").hide()
+
+  })
+
+  $("#PovertyButton").on("click",function(){
+    $("#PopulationButton").show()
+    $("#IncomeButton").show()
+    $("#PovertyButton").hide()
+    $("#UnemploymentButton").show()
+
+        $("#population_chloropleth").hide()
+    $("#income_chloropleth").hide()
+    $("#poverty_chloropleth").show()
+    $("#unemployment_chloropleth").hide()
+
+  })
+
+  $("#UnemploymentButton").on("click",function(){
+    $("#PopulationButton").show()
+    $("#IncomeButton").show()
+    $("#PovertyButton").show()
+    $("#UnemploymentButton").hide()
+
+        $("#population_chloropleth").hide()
+    $("#income_chloropleth").hide()
+    $("#poverty_chloropleth").hide()
+    $("#unemployment_chloropleth").show()
+
+  })
+
+
 })(jQuery); // End of use strict

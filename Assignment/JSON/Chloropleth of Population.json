@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+"title": {"text":"Population Density",
+  "fontSize": 22},
+"width": 352,
+  "height": 352,
+  "data": {
+    "url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/Data/Poverty%20Variable/ACS_2018_Poverty_Status_Variables_Tract-shp/78ff4a24-6d16-4d59-969c-b5e9f72342092020329-1-hfthzv.ozl25.json",
+    "format": {
+      "type": "topojson",
+      "feature": "78ff4a24-6d16-4d59-969c-b5e9f72342092020329-1-hfthzv"
+    }
+  },
+  "transform": [{
+    "lookup": "properties.NAME",
+    "from": {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/Data/Population%20Variable/Spreadsheet/ACS_2018_Population_Variables_Tract.csv"
+      },
+      "key": "NAME",
+      "fields": ["B01001_001E","NAME"]
+    }
+  }],
+  "projection": {
+    "type": "albersUsa"
+  },
+  "mark": "geoshape",
+  "encoding": {
+    "color": {
+      "field": "B01001_001E",
+      "type": "quantitative",
+      "title": "Population"
+    },"tooltip": [
+      {
+        "field":"B01001_001E",
+        "title" : "Population",
+	"type": "quantitative"
+      },
+{
+"field": "NAME",
+"type": "nominal",
+"title": "Census Location"
+}
+    ]
+  }
+}

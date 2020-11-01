@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
- "title": {"text":"Crimes Committed",
+ "title": {"text":"Crimes Committed (Assault)",
   "fontSize": 22}, 
 "width": 352,
   "height": 352,
