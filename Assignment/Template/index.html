@@ -63,10 +63,10 @@
 
 
       </div>
-  <div class="row">
-        <div class="col-lg-8 mx-auto justify-content-center">
+  <div class="row justify-content-center">
+
           <button  type="button" class="btn btn-secondary" data-target = "#pieModal" data-toggle="modal">Crime Breakdown</button>
-        </div>
+
   </div>
     </div>
   </section>
@@ -85,7 +85,7 @@
           </div>
         </div>
         <div class="col-lg-6 mx-auto">
-          <div id="poverty_chloropleth"  style = "display:none"></div>
+          <div id="poverty_chloropleth" ></div>
           <div id = "unemployment_chloropleth"  style = "display:none"></div>
           <div id = "income_chloropleth"  style = "display:none"></div>
           <div id = "population_chloropleth" style = "display:none"></div>
@@ -128,15 +128,15 @@
 
           <p class = "lead"> Note that there is heavy indicators of correlation between crimes and unemployment/poverty and median income.</p>
         </div>
-        <div class="col-lg-10 mx-auto">
+        <div class="col-lg-10 mx-auto ">
           <div id = "scatter1"><button  type="button" class="btn btn-secondary" data-target = "#pieModal" data-toggle="modal">Crime Breakdown</button>
 
           </div>
         </div>
 
         </div>
-      <div class = "row">
-                  <button  type="button" class="btn btn-secondary" data-target = "#corrModal" data-toggle="modal">Crime Breakdown</button>
+      <div class = "row justify-content-center">
+                  <button  type="button" class="btn btn-secondary" data-target = "#corrModal" data-toggle="modal">R Correlation Values</button>
       </div>
       </div>
     </div>
@@ -214,6 +214,10 @@
     vegaEmbed('#piechart', spec).then(function (result) {
         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
+    var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/shift barchart.json";
+    vegaEmbed('#barchart', spec).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
     </script>
 
 
@@ -229,6 +233,8 @@
       </div>
       <div class="modal-body">
           <div id="piechart">
+          </div>
+        <div id="barchart">
           </div>
       </div>
       <div class="modal-footer">

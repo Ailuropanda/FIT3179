@@ -1,0 +1,16 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 450,
+  "height":150,
+
+  "data": {"url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/Data/Cleaned/Crime_Incidents_in_2018.csv"},
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "SHIFT"
+    },
+    "x": {"aggregate": "count"},
+    "color":{"field":"OFFENSE","type": "nominal"},
+    "tooltip":[{"field":"OFFENSE"},{"field":"SHIFT"},{"aggregate":"count"}]
+  }
+}

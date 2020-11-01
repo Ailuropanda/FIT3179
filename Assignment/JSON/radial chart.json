@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "A simple radial chart with embedded data.",
    "width": 450,
-  "height": 450,
+  "height": 300,
   "data": {
     "url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/Data/Cleaned/Crime_Incidents_in_2018.csv"
   },
