@@ -5,7 +5,28 @@
   "height": 300,
   "data": {
     "url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/Data/Cleaned/Crime_Incidents_in_2018.csv"
-  },
+  },"params": [
+ {
+ "name": "SHIFT_SELECTION",
+ "bind": {
+ "input": "select",
+ "options": [
+ null,
+ "DAY",
+ "EVENING",
+ "MIDNIGHT"
+ ],
+ "labels":[
+ "SHOW ALL",
+ "DAY",
+ "EVENING",
+ "MIDNIGHT"
+ ],
+ "name": "Time Selection:  "
+ }
+ }
+ ],
+ "transform": [{"filter": "SHIFT_SELECTION == null || datum.SHIFT == SHIFT_SELECTION"}],
   "layer": [{
     "mark": {"type": "arc", "innerRadius": 20, "stroke": "#fff"}
   }],

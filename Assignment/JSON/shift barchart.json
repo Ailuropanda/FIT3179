@@ -3,7 +3,27 @@
   "width": 450,
   "height":150,
 
-  "data": {"url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/Data/Cleaned/Crime_Incidents_in_2018.csv"},
+  "data": {"url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/Data/Cleaned/Crime_Incidents_in_2018.csv"},"params": [
+ {
+ "name": "METHOD_SELECTION",
+ "bind": {
+ "input": "select",
+ "options": [
+ null,
+ "GUN",
+ "KNIFE",
+ "OTHERS"
+ ],
+ "labels":[
+ "SHOW ALL",
+ "GUN",
+ "KNIFE",
+ "OTHERS"
+ ],
+ "name": "Method Selection:  "
+ }
+ }
+ ],"transform": [{"filter": "METHOD_SELECTION == null || datum.METHOD == METHOD_SELECTION"}],
   "mark": "bar",
   "encoding": {
     "y": {
