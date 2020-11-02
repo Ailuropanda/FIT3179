@@ -116,8 +116,15 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-5 mx-auto">
-          <h2>Contact us</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+          <h2>Seasonal Crime Trends</h2>
+
+          <p> &nbsp;</p>
+          <p class="lead">Crimes tend to increase seasonally which has been proven to be from the difference in temperature. Colder days discouraging crime whilst warmer days often giving more opportunities for crime to arise</p>
+
+          <p> &nbsp;</p>
+        </div>
+        <div class = "col-lg-5 mx-auto">
+          <div id = "linegraph"></div>
         </div>
       </div>
     </div>
@@ -222,6 +229,10 @@
     }).catch(console.error);
     var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/shift barchart.json";
     vegaEmbed('#barchart', spec).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/MultiTimeChart.json";
+    vegaEmbed('#linegraph', spec).then(function (result) {
         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
     </script>

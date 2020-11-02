@@ -29,7 +29,8 @@
     "color": {
       "field": "B01001_001E",
       "type": "quantitative",
-      "title": "Population"
+      "title": "Population",
+"scale":{"scheme":"Reds"}
     },"tooltip": [
       {
         "field":"B01001_001E",

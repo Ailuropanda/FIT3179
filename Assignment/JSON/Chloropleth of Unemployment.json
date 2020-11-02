@@ -29,7 +29,8 @@
     "color": {
       "field": "B23025_calc_pctUnempE",
       "type": "quantitative",
-      "title": "Unemployment %"
+      "title": "Unemployment %",
+"scale":{"scheme":"Reds"}
     },"tooltip": [
       {
         "field":"B23025_calc_pctUnempE",

@@ -33,6 +33,7 @@
   "projection": {"type": "albersUsa"},
   "layer": [{
   "mark": "geoshape",
+  
   "encoding": {
      "shape":{
       "field": "geo",
@@ -41,7 +42,8 @@
      "color":{
       "field": "OFFENSE",
       "type": "quantitative",
-      "title": "Count of Crimes"
+      "title": "Count of Crimes",
+      "scale":{"scheme":"Reds"}
 
     },
        "tooltip": [

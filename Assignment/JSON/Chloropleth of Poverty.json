@@ -29,7 +29,8 @@
     "color": {
       "field": "B17020_002E",
       "type": "quantitative",
-      "title": "Count of Poverty"
+      "title": "Count of Poverty",
+"scale":{"scheme":"Reds"}
     },"tooltip": [
       {
         "field":"B17020_002E",

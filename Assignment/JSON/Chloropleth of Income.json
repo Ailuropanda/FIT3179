@@ -29,7 +29,9 @@
     "color": {
       "field": "B19049_001E",
       "type": "quantitative",
-      "title": "Median Income"
+      "title": "Median Income",
+"scale":{"scheme":"Reds"},
+"sort":"descending"
     },"tooltip": [
       {
         "field":"B19049_001E",
