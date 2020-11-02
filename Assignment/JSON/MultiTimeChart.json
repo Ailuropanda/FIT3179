@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width":600,
+  "height":450,
+  "description": "Stock prices of 5 Tech Companies over Time.",
+  "data": {"url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/Data/Cleaned/Crime_Incidents_in_2018%20-%20Original.csv"},"params": [
+ {
+ "name": "Crime_Selection",
+ "bind": {
+ "input": "select",
+ "options": [
+ null,
+ "ARSON",
+ "ASSAULT W/DANGEROUS WEAPON",
+ "BURGLARY",
+ "HOMICIDE",
+ "MOTOR VEHICLE THEFT",
+ "ROBBERY",
+ "SEX ABUSE",
+ "THEFT F/AUTO",
+ "THEFT/OTHER"
+ ],
+ "labels":[
+ "SHOW ALL",
+ "ARSON",
+ "ASSAULT W/DANGEROUS WEAPON",
+ "BURGLARY",
+ "HOMICIDE",
+ "MOTOR VEHICLE THEFT",
+ "ROBBERY",
+ "SEX ABUSE",
+ "THEFT F/AUTO",
+ "THEFT/OTHER"
+ ],
+ "name": "Crime Selection:  "
+ }
+ }
+ ],"transform": [{"filter": "Crime_Selection == null || datum.OFFENSE == Crime_Selection"}],
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "REPORT_DAT", "type": "temporal","timeUnit":"month","title":"Reported Date"},
+    "y": {"aggregate":"count", "type": "quantitative","title":"Crimes recorded"},
+    "color": {"field": "OFFENSE", "type": "nominal"},
+    "tooltip":[{"field":"REPORT_DAT","timeUnit":"month","title": "Reported Date"},{
+      "aggregate":"count", "title":"Crimes Recorded"
+    }]
+  }
+}

@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 650,
+  "width": 450,
   "height": 450,
   "title": "Crimes committed in Washington DC 2020",
   "projection": {"type": "equalEarth"},
