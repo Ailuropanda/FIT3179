@@ -1,0 +1,52 @@
+---
+title: "Homework Week 10 25/10/2020"
+author: "Rohan Tan 27804836"
+date: "Joe Liu - Wed 2pm Clayton"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+url: https://ailuropanda.github.io/FIT3179/Assignment/Website/
+
+
+## Domain Why and Who:
+
+The domain of this dashboard is the crimes in Washington DC and the relationship between crimes committed and possible extenuating factors that may influence the crime rates in different census areas. This visualisation and website aims to capture the attention of any individual possibly interested in how poverty and low incomes may possible influence and determine crime rates. The aim of this visualisation is to allow any individual interested in the topic of crimes in a first world country to see the basic relationships between crime and poverty as well as seeing crime as a whole within Washington DC.
+
+##  What Data was Used:
+
+The data used for this website was from the opendata.dc.gov website run by the government of Washington DC, and was provided with both shapefiles as well as CSV files which were then transformed accordingly to their required states. The aim of the original dataset was to provide individuals an understanding of the city they had lived in for as long as the census data was running. The dataset utilised had many different dimensions of data however they were often split in multiple CSV's and were often not in uniform formats, requiring extensive data transformation to blend the data together. This was found with the case of Crime data being individual crimes and often not referring to the correct Census Key whilst ACS data being poverty, income and unemployment data had different census keys, to combat this a python script was written to transform the data multiple times into formats feasible to be visualised together. 
+
+## Utilisation of different idioms, marks and channels and their purpose (How):
+
+*Chloropleth Maps*
+
+The main driving force of the dashboard allows for users to interact heavily with two different chloropleth maps to compare map trends and density trends across different subjects. The utilisation of geographic regions for marks and color for channels enables users to see the trends across the city using two different factors, being crime and poverty indicators. The color chosen was red to indicate negativity for crime and poverty and was also reversed for the median income to ensure that lower income was the negative factor.
+
+*Dot Map*
+
+Another Map that was utilised to visualise the spatial distribution and density of crimes in WashingtonDC, by utilising point marks and colors to represent the different types of crimes being committed.
+
+*Radial Chart*
+
+This chart was used to show the proportion of crimes between one another and also enabled filtering to see which crimes were committed most at which times. The aradial chart uses color to represent the nominal attributes of offenses and area marks to represent the proportion of each of the crimes.
+
+*Stacked Bar Chart*
+
+This chart was used to show the proportions of crimes committed in different time periods whilst also allowing for filtering of the method of crime performed. The visualisation uses color to represent offenses similarly to the graph above as well as length marks and same axis to show proportions of the barchart.
+
+*Line Chart*
+
+This chart was used to show the crime trends over months within a single year and how seasonal changes influence crime rates within Washington DC, a filter is avaliable to allow the user to see specific trends of certain offenses. The graph utilises line and point marks as well as color to represent the different types of offenses and how their trend occurs over the year as well. 
+
+**
+
+
+
+## Screenshots
+
+  ![Visualisation Screenshot](C:/Users/Rohan/Desktop/FIT3179 ASM 2/FIT3179/Homework Week 10/Report/PNG/Screenshot of Visualisations.PNG)
+  
+ 
