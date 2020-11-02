@@ -4,6 +4,39 @@
   "height": 450,
   "title": "Crimes committed in Washington DC 2020",
   "projection": {"type": "equalEarth"},
+  "params": [
+ {
+ "name": "Crime_Selection",
+ "bind": {
+ "input": "select",
+ "options": [
+ null,
+ "ARSON",
+ "ASSAULT W/DANGEROUS WEAPON",
+ "BURGLARY",
+ "HOMICIDE",
+ "MOTOR VEHICLE THEFT",
+ "ROBBERY",
+ "SEX ABUSE",
+ "THEFT F/AUTO",
+ "THEFT/OTHER"
+ ],
+ "labels":[
+ "SHOW ALL",
+ "ARSON",
+ "ASSAULT W/DANGEROUS WEAPON",
+ "BURGLARY",
+ "HOMICIDE",
+ "MOTOR VEHICLE THEFT",
+ "ROBBERY",
+ "SEX ABUSE",
+ "THEFT F/AUTO",
+ "THEFT/OTHER"
+ ],
+ "name": "Crime Selection:  "
+ }
+ }
+ ],
   "layer": [
     {
       "data": {
@@ -15,6 +48,7 @@
       "data": {
         "url": "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/Data/Crime_Incidents/Crime_Incidents_in_2020.csv"
       },
+      "transform": [{"filter": "Crime_Selection == null || datum.OFFENSE == Crime_Selection"}],
       "encoding": {
         "longitude": {"field": "LONGITUDE", "type": "quantitative"},
         "latitude": {"field": "LATITUDE", "type": "quantitative"}
