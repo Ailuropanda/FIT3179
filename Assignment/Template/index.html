@@ -93,8 +93,17 @@
 
       <div class="row">
         <div class="col-lg-6 mx-auto">
-          <div id="secondVis">
-          </div>
+          <div id="secondVis"></div>
+          <div id = "theftmap"  style = "display:none"></div>
+          <div id = "homicidemap"  style = "display:none"></div>
+          <div id = "motormap" style = "display:none"></div>
+
+
+          <button  type = "button" class = "btn btn-secondary" id = "assaultButton" style = "display:none"> Assault Map</button>
+
+          <button  type = "button" class="btn btn-secondary" id = "theftButton">Theft Map</button>
+            <button type = "button" class = "btn btn-secondary" id = "homicideButton">Homicide Map</button>
+            <button  type = "button" class = "btn btn-secondary" id = "motorButton"> Motor Theft Map</button>
         </div>
         <div class="col-lg-6 mx-auto">
           <div id="poverty_chloropleth" ></div>
@@ -197,6 +206,18 @@
     }).catch(console.error);
     var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/Chloropleth of Crimes Committed (Assault).json";
     vegaEmbed('#secondVis', spec).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/Chloropleth of Crimes Committed (THEFT).json";
+    vegaEmbed('#theftmap', spec).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/Chloropleth of Crimes Committed (MOTOR).json";
+    vegaEmbed('#motormap', spec).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/Chloropleth of Crimes Committed (HOMICIDE).json";
+    vegaEmbed('#homicidemap', spec).then(function (result) {
         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
     var spec = "https://raw.githubusercontent.com/Ailuropanda/FIT3179/main/Assignment/JSON/Multi%20Scatterplots.JSON";

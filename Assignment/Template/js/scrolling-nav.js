@@ -77,5 +77,58 @@
 
   })
 
+    $("#theftButton").on("click",function(){
+    $("#assaultButton").show()
+    $("#motorButton").show()
+    $("#homicideButton").show()
+    $("#theftButton").hide()
+
+        $("#secondVis").hide()
+    $("#motormap").hide()
+    $("#homicidemap").hide()
+    $("#theftmap").show()
+
+  })
+     $("#assaultButton").on("click",function(){
+    $("#assaultButton").hide()
+    $("#motorButton").show()
+    $("#homicideButton").show()
+    $("#theftButton").show()
+
+        $("#secondVis").show()
+    $("#motormap").hide()
+    $("#homicidemap").hide()
+    $("#theftmap").hide()
+
+  })
+     $("#motorButton").on("click",function(){
+    $("#assaultButton").show()
+    $("#motorButton").hide()
+    $("#homicideButton").show()
+    $("#theftButton").show()
+
+        $("#secondVis").hide()
+    $("#motormap").show()
+    $("#homicidemap").hide()
+    $("#theftmap").hide()
+
+  })
+     $("#homicideButton").on("click",function(){
+    $("#assaultButton").show()
+    $("#motorButton").show()
+    $("#homicideButton").hide()
+    $("#theftButton").show()
+
+        $("#secondVis").hide()
+    $("#motormap").hide()
+    $("#homicidemap").show()
+    $("#theftmap").hide()
+
+  })
+
+
+
+
+
 
 })(jQuery); // End of use strict
