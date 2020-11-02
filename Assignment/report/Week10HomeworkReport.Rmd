@@ -6,7 +6,7 @@ output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE,fig.pos="H")
 ```
 url: https://ailuropanda.github.io/FIT3179/Assignment/Website/
 
@@ -21,36 +21,100 @@ The data used for this website was from the opendata.dc.gov website run by the g
 
 ## Utilisation of different idioms, marks and channels and their purpose (How):
 
-*Chloropleth Maps*
+*Chloropleth Maps: Figure 1*
 
-The main driving force of the dashboard allows for users to interact heavily with two different chloropleth maps to compare map trends and density trends across different subjects. The utilisation of geographic regions for marks and color for channels enables users to see the trends across the city using two different factors, being crime and poverty indicators. The color chosen was red to indicate negativity for crime and poverty and was also reversed for the median income to ensure that lower income was the negative factor.
+![Figure 1: Chloropleth Map](C:\Users\Rohan\Desktop\FIT3179 ASM 2\FIT3179\Assignment\Screenshots\Chloropleth.PNG)
 
-*Dot Map*
+The main driving force of the dashboard allows for users to interact heavily with two different chloropleth maps to compare map trends and density trends across different subjects *(DCGISopendata)*. The utilisation of geographic regions for marks and color for channels enables users to see the trends across the city using two different factors, being crime and poverty indicators. The color chosen was red to indicate negativity for crime and poverty and was also reversed for the median income to ensure that lower income was the negative factor.
 
-Another Map that was utilised to visualise the spatial distribution and density of crimes in WashingtonDC, by utilising point marks and colors to represent the different types of crimes being committed.
+*Dot Map: Figure 2*
 
-*Radial Chart*
 
-This chart was used to show the proportion of crimes between one another and also enabled filtering to see which crimes were committed most at which times. The aradial chart uses color to represent the nominal attributes of offenses and area marks to represent the proportion of each of the crimes.
+![Figure 2: Dot Map](C:\Users\Rohan\Desktop\FIT3179 ASM 2\FIT3179\Assignment\Screenshots\Dotmap.PNG)
 
-*Stacked Bar Chart*
+Another Map that was utilised to visualise the spatial distribution and density of crimes in WashingtonDC *(DCGISopendata)*, by utilising point marks and colors to represent the different types of crimes being committed.
 
-This chart was used to show the proportions of crimes committed in different time periods whilst also allowing for filtering of the method of crime performed. The visualisation uses color to represent offenses similarly to the graph above as well as length marks and same axis to show proportions of the barchart.
+*Radial Chart: Figure 3*
 
-*Line Chart*
+![Figure 3: Dot Map](C:\Users\Rohan\Desktop\FIT3179 ASM 2\FIT3179\Assignment\Screenshots\RadialChart and Barchart.PNG)
 
-This chart was used to show the crime trends over months within a single year and how seasonal changes influence crime rates within Washington DC, a filter is avaliable to allow the user to see specific trends of certain offenses. The graph utilises line and point marks as well as color to represent the different types of offenses and how their trend occurs over the year as well. 
+This chart was used to show the proportion of crimes between one another and also enabled filtering to see which crimes were committed most at which times *(DCGISopendata)*. The aradial chart uses color to represent the nominal attributes of offenses and area marks to represent the proportion of each of the crimes.
 
-*Scatter Plots and Linear Regression*
-
-The scatter plots were utilised to show the correlation between poverty statistics and crime. Using point as marks as well as a line for the correlation graphs and horizontal position and vertical position for channels.
-
-**
+*Stacked Bar Chart: Figure 3*
 
 
 
-## Screenshots
+This chart was used to show the proportions of crimes committed in different time periods whilst also allowing for filtering of the method of crime performed *(DCGISopendata)*. The visualisation uses color to represent offenses similarly to the graph above as well as length marks and same axis to show proportions of the barchart.
 
-  ![Visualisation Screenshot](C:/Users/Rohan/Desktop/FIT3179 ASM 2/FIT3179/Homework Week 10/Report/PNG/Screenshot of Visualisations.PNG)
+*Line Chart: Figure 4*
+
+![Figure 4: Line Chart](C:\Users\Rohan\Desktop\FIT3179 ASM 2\FIT3179\Assignment\Screenshots\LineChart.PNG)
+
+This chart was used to show the crime trends over months within a single year and how seasonal changes influence crime rates within Washington DC, a filter is avaliable to allow the user to see specific trends of certain offenses *(DCGISopendata)*. The graph utilises line and point marks as well as color to represent the different types of offenses and how their trend occurs over the year as well. 
+
+*Scatter Plots and Linear Regression: Figure 5 & 6*
+
+![Figure 5: Scatter Plot](C:\Users\Rohan\Desktop\FIT3179 ASM 2\FIT3179\Assignment\Screenshots\Scatterplots.PNG)
+
+The scatter plots were utilised to show the correlation between poverty statistics and crime. Using point as marks as well as a line for the correlation graphs and horizontal position and vertical position for channels *(DCGISopendata)*.
+
+
+
+
+
+
+
+
+
+
+![Figure 6: Correlation](C:\Users\Rohan\Desktop\FIT3179 ASM 2\FIT3179\Assignment\Screenshots\Correlations.PNG)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+** Biblography
+
+DCGISopendata, 2018. Washington DC Crimes [Dataset]. OpenDataDC. URL: https://opendata.dc.gov/datasets/crime-incidents-in-2028
+
+DCGISopendata, 2018. ACS 2018 Population Variables Tract [Dataset]. OpenDataDC. URL: https://opendata.dc.gov/datasets/acs-2018-population-variables-tract/data
+
+DCGISopendata, 2018. ACS 2018 Median Household Income Tract [Dataset]. OpenDataDC. URL: https://opendata.dc.gov/datasets/0ccdf1f2d4fe4a5391899c595fd2e02c_0
+
+
   
  
